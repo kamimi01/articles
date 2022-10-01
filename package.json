@@ -1,0 +1,13 @@
+{
+  "name": "articles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kamimi01/articles.git",
+  "author": "mika.urakawa <awakaru0122@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "textlint": "^12.2.2",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+  }
+}

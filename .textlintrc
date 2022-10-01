@@ -1,0 +1,12 @@
+{
+    "rules": {
+        "preset-ja-technical-writing": true
+    },
+    "filters": {
+        "allowlist": {
+            "allow": [
+                "ここに許容される言葉を書いていく"
+            ]
+        }
+    }
+}
