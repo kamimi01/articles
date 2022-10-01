@@ -94,6 +94,8 @@ https://twitter.com/manekinekko/status/1281704000572858375
 
 ### オープンなツールの作成
 
+自分の会社のために行う仕事に加えて、私はオープンソースコミュニティーのアクティブなメンバーの一員でもあります。私が雇用主のために行っている仕事のほとんどはオープンでも行っています。つまり私の仕事は、開発者が自分のプロダクトやアプリケーションに Azure を使用し統合するためのツールを使って成功するのを手伝うことでもあります。私の最近作ったツールには、　[https://www.hexa.run/](https://www.hexa.run/) や [Nest.JS libraries for Azure CosmosDB](https://github.com/nestjs/azure-database) 、[Azure Storage](https://github.com/nestjs/azure-storage) があります。[wassim.dev](https://wassim.dev/) でオープンソースの作品を確認することができます。
+
 ### プロダクトへのフィードバック
 
 ### プロダクトのリリース
