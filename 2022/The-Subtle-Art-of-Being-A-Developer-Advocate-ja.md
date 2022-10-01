@@ -1,48 +1,48 @@
-- [Developer Advocate and Technology Evangelist](#developer-advocate-and-technology-evangelist)
-- [Developer Advocates and Marketers](#developer-advocates-and-marketers)
-- [Developer Advocates and Developer Relations](#developer-advocates-and-developer-relations)
-- [What's my role at Microsoft?](#whats-my-role-at-microsoft)
-- [What my typical day looks like as a Developer Advocate?](#what-my-typical-day-looks-like-as-a-developer-advocate)
-  - [Creating content](#creating-content)
-  - [Public speaking](#public-speaking)
-  - [Building tools in the open](#building-tools-in-the-open)
-  - [Product feedback](#product-feedback)
-  - [Shipping products](#shipping-products)
-  - [Being the Customer Zero](#being-the-customer-zero)
-  - [Constantly learning](#constantly-learning)
-  - [Creating and improving official docs](#creating-and-improving-official-docs)
-  - [Helping others grow](#helping-others-grow)
-  - [Business and OKRs](#business-and-okrs)
-- [Final thoughts](#final-thoughts)
+- [ディベロッパーアドボケイトとテクノロジーエバンジェリスト](#ディベロッパーアドボケイトとテクノロジーエバンジェリスト)
+- [ディベロッパーアドボケイトとマーケター](#ディベロッパーアドボケイトとマーケター)
+- [ディベロッパーアドボケイトとDevRel](#ディベロッパーアドボケイトとdevrel)
+- [Microsoftにおける私の役割は何か？](#microsoftにおける私の役割は何か)
+- [ディベロッパーアドボケイトとしての私の典型的な１日はどんな感じか？](#ディベロッパーアドボケイトとしての私の典型的な１日はどんな感じか)
+  - [コンテンツの作成Creating content](#コンテンツの作成creating-content)
+  - [公演](#公演)
+  - [オープンなツールの作成](#オープンなツールの作成)
+  - [プロダクトへのフィードバック](#プロダクトへのフィードバック)
+  - [プロダクトのリリース](#プロダクトのリリース)
+  - [カスタマー・ゼロであること](#カスタマーゼロであること)
+  - [常に学ぶ](#常に学ぶ)
+  - [公式ドキュメントの作成と向上](#公式ドキュメントの作成と向上)
+  - [他の人の成長を助ける](#他の人の成長を助ける)
+  - [ビジネスとOKR](#ビジネスとokr)
+- [最終的な結論](#最終的な結論)
 
-# Developer Advocate and Technology Evangelist
+# ディベロッパーアドボケイトとテクノロジーエバンジェリスト
 
-# Developer Advocates and Marketers
+# ディベロッパーアドボケイトとマーケター
 
-# Developer Advocates and Developer Relations
+# ディベロッパーアドボケイトとDevRel
 
-# What's my role at Microsoft?
+# Microsoftにおける私の役割は何か？
 
-# What my typical day looks like as a Developer Advocate?
+# ディベロッパーアドボケイトとしての私の典型的な１日はどんな感じか？
 
-## Creating content
+## コンテンツの作成Creating content
 
-## Public speaking
+## 公演
 
-## Building tools in the open
+## オープンなツールの作成
 
-## Product feedback
+## プロダクトへのフィードバック
 
-## Shipping products
+## プロダクトのリリース
 
-## Being the Customer Zero
+## カスタマー・ゼロであること
 
-## Constantly learning
+## 常に学ぶ
 
-## Creating and improving official docs
+## 公式ドキュメントの作成と向上
 
-## Helping others grow
+## 他の人の成長を助ける
 
-## Business and OKRs
+## ビジネスとOKR
 
-# Final thoughts
+# 最終的な結論
