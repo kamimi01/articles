@@ -16,9 +16,9 @@
     - [ビジネスとOKR](#ビジネスとokr)
   - [最終的な結論](#最終的な結論)
 
-この記事は、2021年4月21日に dev.to に投稿された「[The Subtle Art of Being A Developer Advocate](https://dev.to/wassimchegham/the-subtle-art-of-being-a-developer-advocate-gdg) 」の日本語訳になります。
+この記事は、2021年4月21日に dev.to に投稿された「[The Subtle Art of Being A Developer Advocate](https://dev.to/wassimchegham/the-subtle-art-of-being-a-developer-advocate-gdg) 」の日本語訳です。
 
-投稿者の Wassim Chegham さんに許可をいただき、日本語訳を Qiita に投稿させていただきます。
+投稿者の Wassim Chegham さんに許可をいただき、Qiita に投稿いたします。
 
 # ディベロッパーアドボケイトになるための秘訣（The Subtle Art of Being A Developer Advocate）
 
@@ -72,6 +72,21 @@ DevRelとは簡単にいうと、ディベロッパーアドボケイトやコ�
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--yjYq1k3e--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5d20yko6tc28sy7s0or4.png)
 
 ## Microsoftにおける私の役割は何か？
+
+ディベロッパーアドボケイトとして、私たちが何をするか、何をすべきかについては意見が合わないかもしれませんが、ある共通の定義には賛同します。
+
+> 私たちの役割は、社内のエンジニアリングチームと開発者コミュニティの橋渡しをすることです。また社内で開発者の支援も行います。
+
+Microsoft で私がどんな仕事をしているかを説明する前に、少し背景を説明させてください。
+私は JavaScript のスキルと JavaScript の開発者コミュニティとの関係性の深さを理由に採用されました。現在の私の仕事は、JavaScript アドボカシーチームとして働くことです。私のチームは Microsoft の Azure エンジニアリング部署の一部である DevRel 組織に所属しています。
+
+私の毎日の仕事は、Microsoft 社内の JavaScript 開発者を支援し、プロダクトチームのミーティングや社内調査で彼らの声を代弁することです。対外的には、JavaScript 開発者のフィードバックを集め、自分達のプロダクトやサービスの改善の支援を行っています。基本的に私は JavaScript 開発者が Microsoft のクラウドやサービス、オープンソースの開発者ツールを使って成功することを支援しています。
+
+Microsoft が自社プロダクトのレベルを上げ、そのために開発者やオープンソースに投資していることはご存知かもしれません。ですので私たちの DevRel チームのミッションは、より多くのことを達成できるように開発者を支援することです。私の大きいディベロッパーアドボカシーチーム（DevOps チームも支援しているため、クラウド開発者アドボカシーとも呼んでいます）は、Rust、Java、Python など異なる開発者コミュニティだけでなく、学生、大学、スタートアップなどにも焦点を当てた複数のサブチームで構成されています。
+
+クラウド開発者アドボカシーチームのミッションは、信頼性、コミュニティ、技術的な関わりを通じて、開発者の心を掴むことです。
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--ihaP-IZg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tebfywwy2jxt22tdi1yd.png)
 
 ## ディベロッパーアドボケイトとしての私の１日はどのような感じか？
 
