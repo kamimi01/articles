@@ -65,6 +65,12 @@ Wikipedia によると、「テックエバンジェリスト」という用語�
 
 ## ディベロッパーアドボケイトとDevRel
 
+DevRelとは簡単にいうと、ディベロッパーアドボケイトやコミュニティマネージャー、開発者コミュニティを作り育てる責任を負うチームの総称です。Microsoft のような大企業の中には、ドキュメントやイベント、ソーシャルメディアに対して責任を負っているチームも含みます。
+
+つまりディベロッパーアドボカシーのチームは、DevRelのごく一部です。
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--yjYq1k3e--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5d20yko6tc28sy7s0or4.png)
+
 ## Microsoftにおける私の役割は何か？
 
 ## ディベロッパーアドボケイトとしての私の１日はどのような感じか？
