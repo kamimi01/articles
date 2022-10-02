@@ -1,13 +1,39 @@
 {
-    "rules": {
-        "preset-smarthr": {
-            "sentence-length": false
-        },
-        "prh": {
-            "rulePaths": [
-                "dict/smarthr-prh-basic.yml",
-                "dict/smarthr-prh-tech-word.yml"
+    "plugins": {
+        "@textlint/markdown": {
+            "extensions": [
+                ".md"
             ]
         }
+    },
+    "rules": {
+        "preset-ja-technical-writing": {
+            "no-exclamation-question-mark": {
+                "allowFullWidthExclamation": true,
+                "allowFullWidthQuestion": true
+            },
+            "no-doubled-joshi": {
+                "strict": false,
+                "allow": [
+                    "か"
+                ]
+            }
+        },
+        "preset-ja-spacing": {
+            "ja-space-between-half-and-full-width": { 
+                "space": "always",
+                "exceptPunctuation": true
+            },
+            "ja-space-around-code": {
+                "before": true,
+                "after": true
+            }
+        },
+        "ja-technical-writing/ja-no-mixed-period": {
+            "allowPeriodMarks": [
+                ":"
+            ]
+        },
+        "ja-technical-writing/sentence-length": false
     }
 }
