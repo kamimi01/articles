@@ -1,27 +1,17 @@
-name: run-textlint
-on: 
-  pull_request_target:
-    types: [ opened, synchronize ] # PR作成または作業ブランチの同期
-    paths: [ '**/*.md' ] # 全てのmarkdownファイル
-  push:
-    branches:
-      - "**"
+name: run-textlint-reviewdog
+on: [pull_request]
 jobs:
-  run-textlint:
+  textlint:
+    name: runner / textlint
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-      - uses: actions/setup-node@v3
+          submodules: true
+      - name: textlint-github-pr-review
+        uses: tsuyoshicho/action-textlint@v3
         with:
-          node-version: 18
-      - run: npm install
-      - run: npx textlint **/*.md >> ./.textlint.log
-      - if: ${{ failure() }} # 校正内容をPRにコメントする
-        run: gh pr comment --body-file ./.textlint.log "${URL}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          URL: ${{ github.event.pull_request.html_url }}
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: warning
+          textlint_flags: "**"
