@@ -9,15 +9,27 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-      - uses: actions/setup-node@v3
+
+      - name: Install Reviewdog
+        uses: reviewdog/action-setup@v1
+
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install
-      - run: npx textlint **/*.md >> ./.textlint.log
-      - if: ${{ failure() }} # 校正内容をPRにコメントする
+
+      - name: Install npm
+        run: npm install
+      
+      - name: Execute textlint
+        run: npx textlint **/*.md >> ./.textlint.log
+      
+      - name: Run Reviewdog
+        if: ${{ failure() }} # 校正内容をPRにコメントする
         run: gh pr comment --body-file ./.textlint.log "${URL}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
