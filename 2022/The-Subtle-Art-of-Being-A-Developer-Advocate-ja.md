@@ -135,3 +135,15 @@ JavaScript は多くの分野で広く使われているので、私が注目し
 ## 最終的な結論
 
 エンジニアの主な責任はプロダクトを保持、設計、実装、リリースすることです。そしてやりたい人は、開発者コミュニティにその体験を共有することができます。 ディベロッパーアドボケイトの責任は、プロダクトに対してフルタイムで関わることではありませんが、エンジニアリングチームが開発者のニーズに寄り添って全員がより良い体験ができるように支援することを除いては、エンジニアとは違いはありません。
+
+# ディベロッパーアドボケイトはオープンな場で学ぶことが大好きなエンジニアです
+
+これは私のストーリーです。もし読んだことに賛成であれば、私たちのチームは採用中ですので、[https://aka.ms/awesomejobs](https://aka.ms/awesomejobs) を確認してください。
+
+ボーナス：ディベロッパーアドボケイトの氷山
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--E6p1mLXo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tbwn6178yb7do2e8bhk8.jpg)
+
+もしディベロッパーアドボケイトに興味があれば、Twitter で [@manekinekko](https://twitter.com/manekinekko) にご自由にご連絡ください。[wassim.dev](https://wassim.dev/) をフォローすることもできます。hashnode でブログを書いているので、[そちら](https://hashnode.com/@wassimchegham/joinme)もフォローしてください。
+
+本記事で使用しているアセットは、Adobe Standard License です。
