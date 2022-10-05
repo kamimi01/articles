@@ -110,6 +110,8 @@ https://twitter.com/manekinekko/status/1281704000572858375
 
 ### カスタマー・ゼロであること
 
+私は、Azure のプロダクトやサービスを改善し、会社を横断して新しい機能を試すためにエンジニアリングチームと一緒に働き、JavaScript 開発者の期待についてのフィードバックを提供することに多くの時間を費やしてきました。 私が過去2年間取り組んできたプロダクトは、Azure Functions、Azure Storage、Azure Cosmos DB、Azure IoT、Azure Static Web Apps、GitHub Codespaces、そして npm です。「カスタマー・ゼロ」として振る舞うことは、リリースされる前にプロダクトに多大な影響を与えるとても良い方法です。その例の一つとして Azure Static Web Apps があります。私と私のチームはこのサービスを使う Web 開発者のコミュニティにベストな開発者体験を提供するため、エンジニアリングチームと密接に協業しています。
+
 ### 常に学ぶ
 
 ### 公式ドキュメントの作成と向上
