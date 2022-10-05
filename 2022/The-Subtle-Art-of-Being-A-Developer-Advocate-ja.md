@@ -112,7 +112,9 @@ https://twitter.com/manekinekko/status/1281704000572858375
 
 私は、Azure のプロダクトやサービスを改善し、会社を横断して新しい機能を試すためにエンジニアリングチームと一緒に働き、JavaScript 開発者の期待についてのフィードバックを提供することに多くの時間を費やしてきました。 私が過去2年間取り組んできたプロダクトは、Azure Functions、Azure Storage、Azure Cosmos DB、Azure IoT、Azure Static Web Apps、GitHub Codespaces、そして npm です。「カスタマー・ゼロ」として振る舞うことは、リリースされる前にプロダクトに多大な影響を与えるとても良い方法です。その例の一つとして Azure Static Web Apps があります。私と私のチームはこのサービスを使う Web 開発者のコミュニティにベストな開発者体験を提供するため、エンジニアリングチームと密接に協業しています。
 
-### 常に学ぶ
+### 常に学び続ける
+
+JavaScript は多くの分野で広く使われているので、私が注目している技術スタックには、Node.js、TypeScript、Serverless、IoT アーキテクチャ、データベース、そしてホスティングも含まれています。正直なところ、Rust というプログラミング言語にも魅力を感じているので、近い将来学び始めるつもりです！ 幸運なことに Rust の開発者アドボカシーチームにいる私の同僚は、[初学者のために Rust についての無料の5時間分のガイド](https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/?WT.mc_id=javascript-00000-wachegha)を作っています。私にとってそれは良いスタートになりそうです。
 
 ### 公式ドキュメントの作成と向上
 
