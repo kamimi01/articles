@@ -1,6 +1,6 @@
 この記事は、2021年4月21日に dev.to に投稿された「[The Subtle Art of Being A Developer Advocate](https://dev.to/wassimchegham/the-subtle-art-of-being-a-developer-advocate-gdg) 」の日本語訳です。
 
-投稿者の Wassim Chegham さんに許可をいただき、Qiita に投稿いたします。
+今回投稿者の Wassim Chegham（[@manekinekko](https://twitter.com/manekinekko)） さんに許可をいただきましたので、Qiita に投稿します。
 
 # ディベロッパーアドボケイトになるための秘訣（The Subtle Art of Being A Developer Advocate）
 
@@ -136,7 +136,7 @@ JavaScript は多くの分野で広く使われているので、私が注目し
 
 エンジニアの主な責任はプロダクトを保持、設計、実装、リリースすることです。そしてやりたい人は、開発者コミュニティにその体験を共有することができます。 ディベロッパーアドボケイトの責任は、プロダクトに対してフルタイムで関わることではありませんが、エンジニアリングチームが開発者のニーズに寄り添って全員がより良い体験ができるように支援することを除いては、エンジニアとは違いはありません。
 
-# ディベロッパーアドボケイトはオープンな場で学ぶことが大好きなエンジニアです
+<h1>ディベロッパーアドボケイトはオープンな場で学ぶことが大好きなエンジニアです</h1>
 
 これは私のストーリーです。もし読んだことに賛成であれば、私たちのチームは採用中ですので、[https://aka.ms/awesomejobs](https://aka.ms/awesomejobs) を確認してください。
 
