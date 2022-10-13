@@ -6,7 +6,7 @@ https://twitter.com/swyx/status/1580001342621618177?s=20&t=Yxo4chFFDy_pxmuXGn1O1
 
 この素晴らしい記事を少しでも多くの人に届けたいと思い、 Qiita に投稿します。
 
-# DevRel as a Service
+# DevRel as a Service - フルスタックなDevRelを切り離し、DevRelチームを超えたDevRelを拡張するためのインフラを構築する - 
 
 DevRel についてのお気に入りのジョークの1つに、DevRel の第一戒があります。それはDevRel の仕事に就いたらすぐに、振り返って「 DevRel への入り方」という自己満足なブログやポッドキャスト、 Twitter Space を作成しなければならないというものです。もちろん誰しも DevRel にはなりたいですよね？2030年までにはエンジニアはいなくなり、技術者は19ドルの電子書籍や10ドルのSubstack[^1]、4.99ドルのスーパーフォロー[^2]をお互いにする DevRelだけとなり、万国で基本的なDevRelが普及しているでしょう。
 
