@@ -8,6 +8,8 @@ https://twitter.com/swyx/status/1580001342621618177?s=20&t=Yxo4chFFDy_pxmuXGn1O1
 
 # DevRel as a Service
 
+DevRel についてのお気に入りのジョークの1つに、DevRel の第一戒があります。それはDevRel の仕事に就いたらすぐに、振り返って「 DevRel への入り方」という自己満足なブログやポッドキャスト、 Twitter Space を作成しなければならないというものです。もちろん誰しも DevRel にはなりたいですよね？2030年までにはエンジニアはいなくなり、技術者は19ドルの電子書籍や10ドルのSubstack[^1]、4.99ドルのスーパーフォロー[^2]をお互いにする DevRelだけとなり、万国で基本的なDevRelが普及しているでしょう。
+
 ## DevRel には限界がある
 
 ## オーナーシップとイネーブルメント
@@ -15,3 +17,8 @@ https://twitter.com/swyx/status/1580001342621618177?s=20&t=Yxo4chFFDy_pxmuXGn1O1
 ## フルスタックな DevRel を切り離す
 
 ## DevRel のインフラの要素
+
+注釈
+
+[^1]: https://substack.com/
+[^2]: https://blog.twitter.com/ja_jp/topics/product/2021/introducing-super-follows
