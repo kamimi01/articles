@@ -2,8 +2,6 @@
 
 今回投稿者の swyx（[@swyx](https://twitter.com/swyx)）さんに翻訳の許可をいただきました。ご快諾いただきありがとうございます。
 
-https://twitter.com/swyx/status/1580001342621618177?s=20&t=Yxo4chFFDy_pxmuXGn1O1A
-
 この素晴らしい記事を少しでも多くの人に届けたいと思い、 Qiita に投稿します。
 
 # DevRel as a Service - フルスタックなDevRelを切り離し、DevRelチームを超えたDevRelを拡張するためのインフラを構築する - 
