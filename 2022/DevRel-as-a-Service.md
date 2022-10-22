@@ -88,7 +88,14 @@ DevRel をスケールするためには、DevRel は**オーナーシップ**�
 
 この「インフラ」の一覧に他に何を加えるのが適切でしょうか？
 
-注釈
-
 [^1]: https://substack.com/
 [^2]: https://blog.twitter.com/ja_jp/topics/product/2021/introducing-super-follows
+
+# 翻訳後記
+
+iOSエンジニアとして活動しているkamimi（[@kamimi_01](https://twitter.com/kamimi_01)）と言います。☺️
+会社のテックブログ運営に関わっている関係でDevRelに興味を持ち、[DevRel Meetup in Tokyo](https://devrel.tokyo/)で始まった記事の翻訳活動に参加しています。
+
+本記事は私としては2つ目の翻訳記事でした。（前回翻訳した記事は「[【日本語訳】デベロッパーアドボケイトになるための秘訣（The Subtle Art of Being A Developer Advocate）](https://qiita.com/kamimi01/items/17fe79dc5522648e2a1d)」）前回の記事ではDevRelやデベロッパーアドボケイトとの役割について内容だったのですが、今回は今度はその役割をどのように企業でスケールしていくかという内容でDevRel as a Serviceという記事タイトルもとても面白い、翻訳してみました。
+
+この翻訳記事がDevRel、デベロッパーアドボケイトに興味がある方々の参考になれば幸いです。🥑
