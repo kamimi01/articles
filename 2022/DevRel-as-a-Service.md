@@ -1,16 +1,16 @@
-この記事は、2022 年 9 月 24 日に [DX Tips: The DevTools Magazine](https://dx.tips/) へ投稿された「[DevRel as a Service](https://dx.tips/devrel-as-a-service)」の日本語訳です。
+この記事は、2022 年 9 月 24 日に [DX Tips: The DevTools Magazine](https://dx.tips/) へ投稿された「[DevRel as a Service Unbundling The Full Stack DevRel, and building Infrastructure for scaling Developer Relations beyond "the DevRel team"](https://dx.tips/devrel-as-a-service)」の日本語訳です。
 
 今回投稿者の swyx（[@swyx](https://twitter.com/swyx)）さんに翻訳の許可をいただきました。ご快諾いただきありがとうございます。
 
 この素晴らしい記事を少しでも多くの人に届けたいと思い、 Qiita に投稿します。
 
-# DevRel as a Service - フルスタックなDevRelを切り離し、DevRelチームを超えたDevRelを拡張するためのインフラを構築する - 
+# DevRel as a Service - フルスタックな DevRel を切り離し、「DevRel チーム」を超えて DevRel をスケールするためのインフラを構築する - 
 
 DevRel についてのお気に入りのジョークの 1 つに、DevRel の第一戒があります。それは DevRel の仕事に就いたらすぐに、振り返って「DevRel への入り方」という自己満足なブログやポッドキャスト、 Twitter Space を作成しなければならないというものです。もちろん誰しも DevRel にはなりたいですよね？2030 年までにはエンジニアはいなくなり、技術者は 19 ドルの電子書籍や 10 ドルの Substack[^1]、4.99 ドルのスーパーフォロー[^2]をお互いにする DevRel だけとなり、万国で基本的な DevRel が普及しているでしょう。
 
 ## DevRel には限界がある
 
-もっと真剣な話をすると、私は以前のマネージャーのあるエピソードで DevRel には限界があることに気づきました。その人は「ねえ、あなたは既に会社の 10%だ！今持っているものでもっとよれ！」と言われ、これ以上人数を増やせませんでした。
+もっと真剣な話をすると、私は以前のマネージャーのあるエピソードで DevRel には限界があることに気づきました。その人は「ねえ、あなたは既に会社の 10%だ！今持っているものでもっとやれ！」と言われ、これ以上人数を増やせませんでした。
 
 これはとても良い指摘です。エンジニアリングマネージャー1 人に対してエンジニアが 5~8 人、並列でプロダクトマネジメント、プロダクトマーケティング、プロダクトデザイン（さらに凝ったことをするのであれば、プロダクトアナリティクス）を様々な割合で配置するという、今では一般的になっている知恵と同じような、DevRel チームの最適なサイズの割合がおそらく存在します。
 
@@ -94,6 +94,6 @@ DevRel をスケールするためには、DevRel は**オーナーシップ**�
 iOS エンジニアとして活動している kamimi（[@kamimi_01](https://twitter.com/kamimi_01)）と言います。☺️
 会社のテックブログ運営に関わっている関係で DevRel に興味を持ち、[DevRel Meetup in Tokyo](https://devrel.tokyo/)で始まった記事の翻訳活動に参加しています。
 
-本記事は私にとって 2 つ目の翻訳記事でした。（前回翻訳した記事は「[【日本語訳】デベロッパーアドボケイトになるための秘訣（The Subtle Art of Being A Developer Advocate）](https://qiita.com/kamimi01/items/17fe79dc5522648e2a1d)」）前回の記事では DevRel やデベロッパーアドボケイトとの役割について内容だったのですが、今回は今度はその役割をどのように企業でスケールしていくかという内容で DevRel as a Service という記事タイトルもとても面白い、翻訳してみました。
+本記事は私にとって 2 つ目の翻訳記事でした。（前回翻訳した記事は「[【日本語訳】デベロッパーアドボケイトになるための秘訣（The Subtle Art of Being A Developer Advocate）](https://qiita.com/kamimi01/items/17fe79dc5522648e2a1d)」）前回の記事では DevRel やデベロッパーアドボケイトとの役割について内容だったのですが、今回は今度はその役割をどのように企業でスケールしていくかという内容で DevRel as a Service という記事タイトルもとても面白いと思い、翻訳してみました。
 
 この翻訳記事が DevRel、デベロッパーアドボケイトに興味がある方々の参考になれば幸いです。🥑
