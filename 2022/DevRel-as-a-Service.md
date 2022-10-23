@@ -16,7 +16,7 @@ DevRel についてのお気に入りのジョークの 1 つに、DevRel の第
 
 [CommonRoom](https://twitter.com/CommonRoomHQ/status/1553063350057086976)の DevRel の報酬に関するレポートは、DevRel チームのサイズに関して驚くほど広範囲に分散してることを指摘しています。
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1663965335348/1ePKsYd13.png?auto=compress,format&format=webp)
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/401966/9d025384-040c-a8b4-68bb-0f2fbdc030bc.png)
 
 しかし私の以前のマネージャーの指摘はもっともで、**ある地点で、DevRel は成長を止める必要があります。**
 
