@@ -3,7 +3,7 @@ title: "SwiftUI と User Messaging Platform (UMP) で IDFA メッセージを表
 emoji: "💬"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["iOS", "Swift", "SwiftUI", "Admob", "AppTrackingTransparency"]
-published: false
+published: true
 ---
 
 最近個人開発アプリに Admob を導入しました。
