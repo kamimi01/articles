@@ -2,7 +2,7 @@
 title: "【App Tracking Transparency 入門】Admob を使った個人開発アプリにおける ATT 対応に真剣に向き合ってみた"
 emoji: "✅"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["iOS", "Swift", "Admob", "AppTrackingTransparency"]
+topics: ["iOS", "Swift", "Admob", "att"]
 published: true
 ---
 
