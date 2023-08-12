@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI で絵文字だけ１文字だけが入力できるテキストフィールドを作る"
+title: "SwiftUI と UITextField でなるべく自然な絵文字入力専用ビューを実装する"
 emoji: "🧜🏻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Swift", "iOS", "SwiftUI", "UITextField"]
