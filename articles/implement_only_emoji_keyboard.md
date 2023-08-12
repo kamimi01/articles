@@ -21,7 +21,8 @@ SwiftUI の TextField で実装したかったですが難しそうだとわか�
 
 完成形はこちらです。
 
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-13 at 00 21 54](https://github.com/kamimi01/articles/assets/47489629/4ed543a2-962b-4cdf-ab33-fd39f315ce7c =300x)
+![Simulator Screen Recording - iPhone 14 Pro - 2023-08-13 at 03 12 34](https://github.com/kamimi01/articles/assets/47489629/9f9bdd5c-6868-4aae-a212-5d4d6098b74f =300x)
+
 
 ## 実装
 
@@ -30,7 +31,7 @@ SwiftUI の TextField で実装したかったですが難しそうだとわか�
 絵文字専用のテキストフィールドなので、開くキーボードは絵文字のキーボードになるようにします。
 `textInputMode` をオーバーライドして、`primaryLanguage` が `emoji`　の場合の `UITextInputMode` が返るようにします。
 
-```swift
+```swift:EmojiTextField.swift
 class EmojiTextField: UITextField {
     override var textInputContextIdentifier: String? { "" }
 
@@ -49,7 +50,7 @@ class EmojiTextField: UITextField {
 
 `Character` を拡張して、絵文字かどうかを判定する変数 `isEmoji` を実装します。
 
-```swift
+```swift:Character+Extension.swift
 extension Character {
     var isEmoji: Bool {
         guard let scalar = unicodeScalars.first else { return false }
@@ -60,7 +61,7 @@ extension Character {
 
 次に `String` を拡張して、先ほど実装した `isEmoji` を使って絵文字の文字列だけを返す関数を実装します。
 
-```swift
+```swift:String+Extension.swift
 extension String {
     func onlyEmoji() -> String {
         return self.filter({ $0.isEmoji })
@@ -70,11 +71,11 @@ extension String {
 
 ### 3. `UIViewRepresentable`で`UITextField`をつくる
 
-最後に、`UIViewRepresentable` を使って、`UITextField` を実装していきます。
+最後に `UIViewRepresentable` を使って、`UITextField` を実装していきます。
 
 ポイントは、`UITextFieldDelegate` の `textFieldDidChangeSelection(_:)` を使用し、テキストの変更を検知して絵文字だけがテキストフィールドに表示されるようにしていることです。
 
-```swift
+```swift:OneEmojiTextField.swift
 struct OneEmojiTextField: UIViewRepresentable {
     @Binding var inputText: String
     let fontSize: CGFloat
@@ -122,6 +123,91 @@ extension OneEmojiTextField {
 OneEmojiTextField(inputText: $profileImageEmoji, fontSize: 80)
 ```
 
+### おまけ
+
+より自然な見た目にするための工夫やエッジケースの対応方法について考えてみました。
+
+#### 一般的なテキストフィールド感をなくす
+
+絵文字１文字を表示するためにテキストフィールドを使っていることに少し違和感がありました。
+かといって自分で絵文字の選択肢を用意して独自の View を準備するのは色々大変です。（何か良いライブラリなどはあるのかもしれませんが。。）
+
+そこでキャレットや範囲選択など、一般的なテキストフィールドの見た目や操作を制限してみました。
+具体的には[こちら](https://qiita.com/Simmon/items/f9d60ab51cc6b0b4b3bc)を参考に、`EmojiTextField` クラスに以下の実装をしてみました。
+
+```swift:EmojiTextField.swift
+class EmojiTextField: UITextField {
+    // 省略
+
+    // 入力カーソル非表示
+    override func caretRect(for position: UITextPosition) -> CGRect {
+        return .zero
+    }
+
+    // 範囲選択カーソル非表示
+    override func selectionRects(for range: UITextRange) -> [UITextSelectionRect] {
+        return []
+    }
+
+    // コピー・ペースト・選択等のメニュー非表示
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        return false
+    }
+}
+```
+
+こうすることで、普通のテキストフィールド感をなくすことができた気がします。
+
+ちなみにデフォルトの絵文字キーボードを使っていれば、絵文字の検索もできます。私は絵文字をテキストで検索することがけっこうあるので、これが使えるのは大きいです。
+
+#### キーボードのモードに絵文字が存在しない場合の対応
+
+キーボードの選択肢に絵文字がないケース、つまり絵文字キーボードが表示できないケースを考えてみます。
+デフォルトでは絵文字キーボードは表示できるようになっているので多くないケースだと思いますが、設定アプリから表示できないようにすることができます。
+
+![](https://storage.googleapis.com/zenn-user-upload/01321a98933a-20230813.png =300x)
+
+ここから削除されている場合、前述の実装だと絵文字キーボードは表示されません。
+
+試しに `EmojiTextField` クラスの `textInputMode` の実装を以下のように書き換えて、`activeInputMode` の中身を見てみます。
+
+```swift:EmojiTextField.swift
+class EmojiTextField: UITextField {
+    override var textInputContextIdentifier: String? { "" }
+
+    override var textInputMode: UITextInputMode? {
+        for mode in UITextInputMode.activeInputModes {
+            print("activeInputModes:", mode.primaryLanguage)
+            if mode.primaryLanguage == "emoji" {
+                return mode
+            }
+        }
+        return nil
+    }
+}
+```
+
+絵文字キーボードがある場合の出力。
+
+```
+activeInputModes: Optional("ja-JP")
+activeInputModes: Optional("ja-JP")
+activeInputModes: Optional("en-JP")
+```
+
+絵文字キーボードがない場合の出力。
+
+```
+activeInputModes: Optional("ja-JP")
+activeInputModes: Optional("ja-JP")
+activeInputModes: Optional("en-JP")
+activeInputModes: Optional("emoji")
+```
+
+ということで`emoji` のモードがないので、絵文字キーボードが表示できません。
+
+私のアプリではこの場合にはテキストフィールドではなく、SwiftUI のただの Text を表示することにしました。しかし画像を変更しようとタップするユーザーがいそうなので、そういったユーザー向けに絵文字キーボードの表示ができるように設定を変えることを促すのもよさそうです。
+
 ## 参考
 
 https://stackoverflow.com/questions/66397745/how-to-make-sure-that-only-emoji-can-be-entered-in-the-textfield-swiftui
@@ -133,6 +219,8 @@ https://dev.classmethod.jp/articles/swift-uitextfield-dame-zettai/
 https://qiita.com/hcrane/items/ca5b1d6cbff57fe8fc9b
 
 https://blog.studysapuri.jp/entry/2022/03/28/using-uikit-in-swiftui
+
+https://qiita.com/Simmon/items/f9d60ab51cc6b0b4b3bc
 
 ## まとめ
 
