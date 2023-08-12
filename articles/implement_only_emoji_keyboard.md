@@ -21,7 +21,7 @@ SwiftUI の TextField で実装したかったですが難しそうだとわか�
 
 完成形はこちらです。
 
-![Simulator Screen Recording - iPhone 14 Pro - 2023-08-13 at 03 12 34](https://github.com/kamimi01/articles/assets/47489629/9f9bdd5c-6868-4aae-a212-5d4d6098b74f =300x)
+![Simulator Screen Recording - iPhone 14 Pro - 2023-08-13 at 05 21 55](https://github.com/kamimi01/articles/assets/47489629/47293ec2-38f4-4d14-824e-a559f1242779 =300x)
 
 
 ## 実装
