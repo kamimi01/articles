@@ -132,6 +132,12 @@ OneEmojiTextField(inputText: $profileImageEmoji, fontSize: 80)
 絵文字１文字を表示するためにテキストフィールドを使っていることに少し違和感がありました。
 かといって自分で絵文字の選択肢を用意して独自の View を準備するのは色々大変です。（何か良いライブラリなどはあるのかもしれませんが。。）
 
+そこで２つ改善をしてみました。
+
+正直テキストフィールド感を完全に無くせているわけではないので微妙な改善もあるかもしれないですが、あくまで絵文字キーボードを使いたいという前提のもと対応してみました。
+
+##### 見た目の改善
+
 そこでキャレットや範囲選択など、一般的なテキストフィールドの見た目や操作を制限してみました。
 具体的には[こちら](https://qiita.com/Simmon/items/f9d60ab51cc6b0b4b3bc)を参考に、`EmojiTextField` クラスに以下の実装をしてみました。
 
@@ -157,6 +163,34 @@ class EmojiTextField: UITextField {
 ```
 
 こうすることで、普通のテキストフィールド感をなくすことができた気がします。
+
+##### 挙動の改善
+
+すでに絵文字が入力されている状態から別の絵文字に変更したいときはキーボードの x ボタンで削除しないと返ることができません。
+これはテキストフィールドでできているので当たり前のことですが、絵文字設定用 View と考えるとこれは少し不自然な挙動かなと思いました。
+
+別の絵文字ボタンが押されたらその絵文字に切り替わって欲しいです。
+
+ということで `textFieldDidChangeSelection(_:)` の実装を以下のように修正しました。
+
+```swift
+func textFieldDidChangeSelection(_ textField: UITextField) {
+    guard let profileImageEmoji = textField.text else { return }
+
+    var emojiText: String {
+        let tmpEmojiText = profileImageEmoji.onlyEmoji()
+        // 1 文字以上入力された場合は最後に入力された絵文字を表示する
+        if tmpEmojiText.count > 1 {
+            return String(tmpEmojiText.suffix(1))
+        }
+        return String(tmpEmojiText.prefix(1))
+    }
+    textField.text = emojiText
+    parent.inputText = emojiText
+}
+```
+
+これで絵文字の変更も一般的なテキストフィールドよりも簡単に行うことができるようになりました。
 
 ちなみにデフォルトの絵文字キーボードを使っていれば、絵文字の検索もできます。私は絵文字をテキストで検索することがけっこうあるので、これが使えるのは大きいです。
 
